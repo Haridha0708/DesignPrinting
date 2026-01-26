@@ -1,0 +1,106 @@
+.hero {
+  width: 100%;
+  height: 90vh;
+
+  /* FULL WIDTH background */
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("");
+
+  background-size: cover;
+  background-position: center;
+}
+/* Dark overlay */
+.hero-overlay {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0.4)
+  );
+  
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Text container */
+.hero-content {
+  max-width: 1200px;
+  padding: 0 20px;
+  text-align: left;
+  color: #fff;
+  margin-left: 80px;
+
+  /* font-family: Calibri, "Segoe UI", Arial, Helvetica, sans-serif; */
+}
+
+.hero-content h1 {
+  font-size: 52px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #e5e5e5;
+  margin-bottom: 30px;
+}
+
+/* Buttons */
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: left;
+  margin-bottom: 30px;
+}
+
+.hero-buttons button {
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+}
+
+.hero-buttons .primary {
+  background: #4d0a7a;
+  color: #fff;
+}
+.hero-buttons .primary:hover{
+   background-color: #6331b9;
+}
+
+.hero-buttons .secondary {
+  background: #fff;
+  color: #4d0a7a;
+}
+
+.hero-buttons .secondary:hover{
+  background: #c898db;
+}
+
+/* Bottom features */
+.hero-features {
+  display: flex;
+  gap: 25px;
+  justify-content: left;
+  flex-wrap: wrap;
+  font-size: 25px;
+  color: #ddd;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-features {
+    font-size: 13px;
+  }
+}
