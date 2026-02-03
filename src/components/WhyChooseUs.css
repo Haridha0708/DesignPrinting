@@ -3,6 +3,24 @@
   background: #f9f9fb;
 }
 
+.why-heading {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.why-left .slash {
+  color: #7e26bd;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.why-left .title {
+  color: #0f2a2a;
+  font-size: 18px;
+  font-weight: 500;
+}
+
 .why-container {
   max-width: 1200px;
   margin: auto;
@@ -109,32 +127,47 @@
   font-weight: 700;
 }
 
-/* RIGHT IMAGES */
+/* RIGHT IMAGES – CSS ONLY (NO <img>) */
 .why-right {
-  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 
-.why-right img {
+/* COMMON IMAGE BOX */
+.why-right .img {
   width: 100%;
+  height: 180px;
   border-radius: 16px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   box-shadow: 0 20px 40px rgba(0,0,0,0.15);
 }
 
-.img-top {
-  position: relative;
-  z-index: 2;
+/* INDIVIDUAL IMAGES (PUBLIC FOLDER PATH) */
+.why-right .img-1 {
+  background-image: url("/TDP%20Website%20Images/Gallary/Magazine%20Printing.webp");
 }
 
-.img-bottom {
-  position: absolute;
-  right: -40px;
-  bottom: -40px;
-  width: 85%;
-  z-index: 1;
+.why-right .img-2 {
+  background-image: url("/TDP%20Website%20Images/Gallary/Commercial%20offset%20Print.webp");
+}
+
+.why-right .img-3 {
+  background-image: url("/TDP%20Website%20Images/Gallary/Gallary%20Banner.webp");
+}
+
+/* LARGE IMAGE */
+.why-right .large {
+  grid-column: span 2;
+  height: 240px;
 }
 
 /* RESPONSIVE */
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
   .why-container {
     grid-template-columns: 1fr;
   }
@@ -148,4 +181,4 @@
     width: 100%;
     margin-top: 20px;
   }
-}
+} */

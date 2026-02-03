@@ -1,17 +1,12 @@
 .hero {
   width: 100%;
   height: 90vh;
-
+  position: relative;
   /* FULL WIDTH background */
-  background: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.75),
-      rgba(0, 0, 0, 0.4)
-    ),
-    url("");
-
+  background-image: url("/TDP%20Website%20Images/Home/Home%20banner.webp");
   background-size: cover;
   background-position: center;
+  filter: brightness(1.15) contrast(1.1);
 }
 /* Dark overlay */
 .hero-overlay {
@@ -19,21 +14,24 @@
   width: 100%;
   background: linear-gradient(
     to right,
-    rgba(0, 0, 0, 0.75),
-    rgba(0, 0, 0, 0.4)
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.25)
   );
   
   display:flex;
   align-items: center;
   justify-content: center;
 }
+
+
 /* Text container */
 .hero-content {
   max-width: 1200px;
   padding: 0 20px;
-  text-align: left;
   color: #fff;
   margin-left: 80px;
+  position: relative;
+  z-index: 1;
 
   /* font-family: Calibri, "Segoe UI", Arial, Helvetica, sans-serif; */
 }
@@ -55,7 +53,7 @@
 .hero-buttons {
   display: flex;
   gap: 16px;
-  justify-content: left;
+  /* justify-content: left; */
   margin-bottom: 30px;
 }
 
@@ -87,11 +85,39 @@
 /* Bottom features */
 .hero-features {
   display: flex;
-  gap: 25px;
-  justify-content: left;
+  gap: 32px;
   flex-wrap: wrap;
-  font-size: 25px;
-  color: #ddd;
+  margin-top: 26px;
+}
+
+.hero-features span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
+  font-size: 17px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.hero-features svg {
+
+  color: #ffffff;
+  border-radius: 50%;
+
+  border: 2px solid #ffffff;
+  background: transparent;
+
+  padding: 3px;
+  font-size: 12px;
+
+  width: 22px;
+  height: 22px;
+
+  fill: none !important;       /* 🔥 KEY LINE */
+  stroke: currentColor;        /* 🔥 outline color */
+  stroke-width: 2;             /* 🔥 visible outline */
+
 }
 
 /* Responsive */
@@ -100,7 +126,7 @@
     font-size: 36px;
   }
 
-  .hero-features {
-    font-size: 13px;
+  .hero-content {
+    margin-left: 10px;
   }
 }

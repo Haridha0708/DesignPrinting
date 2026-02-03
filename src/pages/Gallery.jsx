@@ -12,6 +12,7 @@ function Gallery() {
       </section>
 
       <Portfolio />
+      <Footer/>
     </>
   );
 }

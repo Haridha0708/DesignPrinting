@@ -1,8 +1,9 @@
 /* HERO */
 .contact-hero {
   height: 280px;
-  background: url("") center/cover no-repeat;
+  background: url("TDP%20Website%20Images/Contact%20us/Contact%20Us%20Banner.webp") center/cover no-repeat;
   position: relative;
+  filter: brightness(1.15) contrast(1.1); /* 🔥 brighter colors */
 }
 
 .contact-hero-overlay {

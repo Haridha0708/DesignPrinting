@@ -49,7 +49,9 @@
   padding: 10px 22px;
   border-radius: 6px;
   cursor: pointer;
-  margin-right: 0px;
+  gap: 30px;
+  margin-right: -90px;
+
 }
 
 /* Responsive */

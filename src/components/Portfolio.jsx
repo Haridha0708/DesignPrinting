@@ -19,21 +19,29 @@ export default function Portfolio() {
         </div>
 
         <div className="portfolio-grid">
-          {/* <div className="portfolio-card">
-            <img src="" alt="" />
-            <span>Commercial Offset Press</span>
-          </div>
 
-          <div className="portfolio-card">
-            <img src="" alt="" />
-            <span>LED Storefront Sign</span>
-          </div> */}
+            <div className="portfolio-card img-1">
+              <div className="overlay">
+                  <span>Offset Print</span>
+                  <h4>Commercial Offset Press</h4>
+              </div>
+            </div>
 
-          {/* <div className="portfolio-card">
-            <img src="" alt="" />
-            <span>Digital Printing</span>
-          </div> */}
-        </div>
+            <div className="portfolio-card img-2">
+              <div className="overlay">
+                <span>LED Signage</span>
+                <h4>LED Storefront Sign</h4>
+              </div>
+            </div> 
+            <div className="portfolio-card img-3">
+              <div className="overlay">
+                <span>Digital Print</span>
+                <h4>Digital Printing</h4>
+              </div>
+            </div>
+
+            </div>
+
 
       </div>
     </section>

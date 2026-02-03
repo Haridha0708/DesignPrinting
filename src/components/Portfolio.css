@@ -63,7 +63,81 @@
   position: relative;
   overflow: hidden;
   border-radius: 16px;
+  height: 300px;
+
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
 }
+
+/* DARK GRADIENT OVERLAY */
+.portfolio-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.75),
+    rgba(0,0,0,0.3),
+    transparent
+  );
+  opacity: 0;                 /* ❌ hidden by default */
+  transition: opacity 0.3s ease;
+}
+
+/* TEXT */
+.overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 3;
+  color: #fff;
+  background: none;    
+  padding: 0;          
+  border: none;        
+  opacity: 0;                 /* ❌ hidden by default */
+  transform: translateY(8px);
+  transition: 0.3s ease;
+  text-align: left;
+}
+
+/* CATEGORY TEXT (Offset Print) */
+.overlay span {
+  display: block;
+  font-size: 13px;        /* 🔒 fixed */
+  font-weight: 500;       /* 🔒 same everywhere */
+  text-align: left;
+  line-height: 1.2;
+  opacity: 0.85;
+  margin-bottom: 4px;
+  background: none;     
+  padding: 0;           
+  border: none;         
+}
+
+.overlay h4 {
+  display: block;            /* 🔥 IMPORTANT */
+  margin: 2px 0 0 0;         /* controlled spacing */
+  padding: 0;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.25;         /* 🔥 consistent */
+  color: #ffffff;
+}
+
+/* 🔥 ONLY ON HOVER */
+.portfolio-card:hover::after {
+  opacity: 1;
+}
+
+.portfolio-card:hover .overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 .portfolio-card img {
   width: 100%;
@@ -77,10 +151,24 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  padding: 14px;
-  background: rgba(0,0,0,0.6);
+  padding: 14px 18px;
+  /* background: rgba(0,0,0,0.6); */
   color: #fff;
   font-size: 15px;
+  font-weight: 500;
+}
+
+/* BACKGROUND IMAGES */
+.img-1 {
+  background-image: url("/TDP%20Website%20Images/Gallary/Commercial%20offset%20Print.webp");
+}
+
+.img-2 {
+  background-image: url("/TDP%20Website%20Images/Gallary/LED%20Signage.webp");
+}
+
+.img-3 {
+  background-image: url("/TDP%20Website%20Images/Gallary/Magazine%20Printing.webp");
 }
 
 .portfolio-card:hover img {
@@ -88,7 +176,7 @@
 }
 
 /* Responsive */
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
   .portfolio-grid {
     grid-template-columns: 1fr;
   }
@@ -98,4 +186,4 @@
     gap: 20px;
     align-items: flex-start;
   }
-}
+} */

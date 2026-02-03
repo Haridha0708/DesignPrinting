@@ -1,4 +1,5 @@
 import "./Hero.css";
+import {FiZap,FiClock,FiStar,FiCheckCircle} from "react-icons/fi";
 
  function Hero() {
   return (
@@ -18,10 +19,10 @@ import "./Hero.css";
             <button className="secondary">View Our Work</button>
         </div>
         <div className="hero-features">
-            <span> Fast Turnaround</span>
-            <span> On-Time Delivery</span>
-            <span> Premium Quality</span>
-            <span> Satisfaction Guaranteed</span>
+            <span ><FiZap/> Fast Turnaround</span>
+            <span ><FiClock/>On-Time Delivery</span>
+            <span ><FiStar/>Premium Quality</span>
+            <span ><FiCheckCircle/>Satisfaction Guaranteed</span>
         </div>
         </div>
 {/* 

@@ -13,7 +13,11 @@ import "./WhyChooseUs.css";
 
         {/* LEFT CONTENT */}
         <div className="why-left">
-          <h4>// Why Choose Us</h4>
+          <div className="why-heading">
+            <span className="slash">//</span>
+            <span className="title"> Why Choose Us</span>
+          </div>
+
           <h2>Industry-Leading Expertise</h2>
 
           <p className="why-desc">
@@ -43,15 +47,14 @@ import "./WhyChooseUs.css";
             <li>Quick turnaround for urgent jobs</li>
           </ul>
         </div>
+      
 
         {/* RIGHT IMAGES */}
         <div className="why-right">
-          <img
-           
-          />
-          <img
-           
-          />
+          <div className="img img-1"></div>
+          <div className="img img-2"></div>
+          <div className="img img-3 large"></div>
+                  
         </div>
 
       </div>

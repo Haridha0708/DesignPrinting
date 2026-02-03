@@ -33,8 +33,8 @@ function Testimonials() {
             <strong>This team rocks!</strong>
 
             <div className="user">
-              <img src="" alt="John" />
-              <span>John, <small>Coimbatore</small></span>
+              <img src="" alt="" />
+              <span> <small></small></span>
             </div>
           </div>
 
@@ -49,8 +49,8 @@ function Testimonials() {
             <strong>Remarkable!</strong>
 
             <div className="user">
-              <img src="" alt="Arun" />
-              <span>Arun, <small>Salem</small></span>
+              <img src="" alt="" />
+              <span> <small></small></span>
             </div>
           </div>
 
@@ -65,8 +65,8 @@ function Testimonials() {
             <strong>I really love it!</strong>
 
             <div className="user">
-              <img src="" alt="Michael" />
-              <span>Michael, <small>Madurai</small></span>
+              <img src="" alt="" />
+              <span> <small></small></span>
             </div>
           </div>
 

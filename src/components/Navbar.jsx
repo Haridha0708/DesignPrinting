@@ -12,7 +12,7 @@ import "./Navbar.css";
         </div>
 
         <nav className="nav-links">
-          <Link to="/home">Home</Link>
+          <Link to="/">Home</Link>
           <Link to="/gallery">Gallery</Link>
           <Link to="/contact">Contact Us</Link>
         </nav>

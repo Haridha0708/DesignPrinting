@@ -7,7 +7,8 @@ import { FaPrint, FaLightbulb, FaLayerGroup, FaBolt } from "react-icons/fa";
       <div className="services-container">
 
         <div className="services-left">
-          <h4 className="tag">// Our Services</h4>
+           <span className="slash">//</span>
+           <span className="title">   Our Services</span>
           <h2>Complete Printing & Signage Solutions</h2>
           <p>
             From UV sunpack sheets to LED signboards and commercial printing,
