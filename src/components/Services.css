@@ -1,0 +1,121 @@
+.services {
+  padding: 80px 0px;
+  background: #fff;
+}
+
+.services-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+/* Purple slash ONLY */
+.services-left .slash {
+  color: #6816a3; /* premium purple */
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* Our Services text */
+.services-left .title {
+  color: #0f2a2a; /* dark teal  */
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.services-left h2 {
+  font-size: 36px;
+  margin: 10px 0;
+}
+
+.services-left p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.services-left button {
+  margin-top: 20px;
+  background: #4d0a7a;
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.services-left button:hover{
+   background-color: #6331b9;
+}
+
+.tag {
+  color: #4d0a7a;
+  font-weight: 600;
+}
+
+.service-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 26px 24px;
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: 
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+
+  cursor: pointer;
+}
+
+/* 🔥 Hover highlight */
+.service-card:hover {
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+}
+
+.service-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    #4d0a7a,
+    #4d0a7a
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+
+.service-icon svg {
+  font-size: 22px;
+}
+
+.service-card h3 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 14.5px;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.services-right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .services-container {
+    grid-template-columns: 1fr;
+  }
+}

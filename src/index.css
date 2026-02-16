@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  overflow-x: hidden; /* 🔑 prevents right blank space */
+}
+
+body {
+  font-family: Calibri, "Segoe UI", Arial, Helvetica, sans-serif;
+  color: #0f172a;
+}

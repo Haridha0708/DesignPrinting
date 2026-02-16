@@ -1,0 +1,67 @@
+.cta {
+  background: url("/TDP%20Website%20Images/Home/CTA.webp") center/cover no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 80px 0;
+  width: 100%;
+  position: relative;
+  display: block;
+  
+}
+
+/* overlay */
+.cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+
+.cta-overlay {
+  /* background: rgba(0,0,0,0.65); */
+
+  max-width: 900px;
+  margin: 0 auto;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  text-align: center;
+  
+  color: #fff;
+  padding: 0 20px;
+}
+
+.cta-overlay h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.cta-overlay p {
+  max-width: 650px;
+  font-size: 15px;
+  margin-bottom: 22px;
+  color: #e5e7eb;
+  line-height: 1.6;
+  /* text-align: center;
+  align-items: center; */
+}
+
+.cta-overlay button {
+  background: #43217e;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.cta-overlay button:hover{
+  background-color: #6331b9;
+}

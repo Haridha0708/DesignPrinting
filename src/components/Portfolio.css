@@ -1,0 +1,204 @@
+.portfolio {
+  padding: 90px 0;
+  background: #ffffff;
+  font-family: Calibri, "Segoe UI", Arial, Helvetica, sans-serif;
+}
+
+.portfolio-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.portfolio-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.portfolio-head h4 {
+  color: #4d0a7a;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.portfolio-head h2 {
+  font-size: 38px;
+  color: #0f3d3e;
+  margin-bottom: 12px;
+}
+
+.portfolio-head p {
+  color: #64748b;
+  max-width: 520px;
+}
+
+.portfolio-btn {
+  border: 1.5px solid #4d0a7a;
+  background: #fefeff;
+  color: #4d0a7a;
+  padding: 10px 26px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14.5px;
+  font-weight: 500;
+  margin-top: 6px;
+  /* transition: background 0.25s ease, border 0.25s ease; */
+}
+
+.portfolio-btn:hover{
+    background-color:#e0d7f0;
+    border: none;
+}
+
+/* GRID */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.portfolio-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  height: 300px;
+
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+/* DARK GRADIENT OVERLAY */
+.portfolio-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.75),
+    rgba(0,0,0,0.3),
+    transparent
+  );
+  opacity: 0;                 /* ❌ hidden by default */
+  transition: opacity 0.3s ease;
+}
+
+/* TEXT */
+.overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 3;
+  color: #fff;
+  background: none;    
+  padding: 0;          
+  border: none;        
+  opacity: 0;                 /* ❌ hidden by default */
+  transform: translateY(8px);
+  transition: 0.3s ease;
+  text-align: left;
+}
+
+/* CATEGORY TEXT (Offset Print) */
+.overlay span {
+  display: block;
+  font-size: 13px;        /* 🔒 fixed */
+  font-weight: 500;       /* 🔒 same everywhere */
+  text-align: left;
+  line-height: 1.2;
+  opacity: 0.85;
+  margin-bottom: 4px;
+  background: none;     
+  padding: 0;           
+  border: none;         
+}
+
+.overlay h4 {
+  display: block;            /* 🔥 IMPORTANT */
+  margin: 2px 0 0 0;         /* controlled spacing */
+  padding: 0;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.25;         /* 🔥 consistent */
+  color: #ffffff;
+}
+
+/* 🔥 ONLY ON HOVER */
+.portfolio-card:hover::after {
+  opacity: 1;
+}
+
+.portfolio-card:hover .overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.portfolio-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.portfolio-card span {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 14px 18px;
+  /* background: rgba(0,0,0,0.6); */
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* BACKGROUND IMAGES */
+.img-1 {
+  background-image: url("/TDP%20Website%20Images/Gallary/Commercial%20offset%20Print.webp");
+}
+
+.img-2 {
+  background-image: url("/TDP%20Website%20Images/Gallary/LED%20Signage.webp");
+}
+
+.img-3 {
+  background-image: url("/TDP%20Website%20Images/Gallary/Magazine%20Printing.webp");
+}
+
+
+.img-5 {
+  background-image: url("/TDP%20Website%20Images/Gallary/Outdoor%20flex.webp");
+}
+
+
+.img-4 {
+  background-image: url("/TDP%20Website%20Images/Gallary/Exhibition%20Display.webp");
+}
+
+
+.img-6 {
+  background-image: url("/TDP%20Website%20Images/Gallary/Flyer%20collections.webp");
+}
+
+.portfolio-card:hover img {
+  transform: scale(1.08);
+}
+
+/* Responsive */
+/* @media (max-width: 900px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-head {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+} */
